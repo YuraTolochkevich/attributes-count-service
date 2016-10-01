@@ -29,7 +29,7 @@ class BenchMarkTest extends FlatSpec with Matchers {
     val start = System.currentTimeMillis()
     val resCount = countProcessor.queryCountForAttributes(usersAttrsVector, attribues)
     val finish = System.currentTimeMillis()
-    println("Total time for tests for " + countProcessor.toString + ": "+
+    info("Total time for tests for " + countProcessor.toString + ": "+
       (finish - start) + "ms. "+" resultCount: "+ resCount)
   }
 
